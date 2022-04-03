@@ -118,9 +118,15 @@ img {
 .mb-3{
   margin-bottom: 3em;
 }
+.my-1{
+  margin: 1em 0;
+}
 .mx-1{
   margin-left: 5px;
   margin-right: 5px;
+}
+.g-2{
+  grid-gap: 2rem;
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
   color: #e35455;
@@ -529,7 +535,15 @@ body.menu-open .logo-small {
 .logo-big img {
 	max-width: 140px;
 }
-
+.login-btn{
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 30px 0;
+}
+.login-btn a{
+  color: #222;
+}
 
 /* header styles 
 ================= */
@@ -597,6 +611,8 @@ body.menu-open #header.header-dark {
 
 ul.menu-list {
 	text-align: center;
+  list-style: none;
+  padding: 0;
 }
 @media (max-width: 768px) {
 	ul.menu-list {
@@ -2381,6 +2397,10 @@ ul.isotope-filter-links > li > a.active {
   text-transform: uppercase;
   font-size: 16px;
   position: relative;
+  padding: 6px 12px;
+  height: 48px;
+  display: flex;
+  align-items: center;
 }
 
 .gsti-navbar-list a:hover{
@@ -2393,7 +2413,7 @@ ul.isotope-filter-links > li > a.active {
   width: 100%;
   height: 1px;
   background-color: #333333;
-  bottom: -12px;
+  bottom: -1px;
   left: 0;
 }
 
@@ -2442,6 +2462,13 @@ ul.isotope-filter-links > li > a.active {
   align-items: center;
   justify-content: center;
   grid-gap: 3rem;
+}
+
+@media (max-width : 767px) {
+  .gsti-profile{
+    grid-gap: 0rem;
+    flex-direction: column;
+  }
 }
 
 /* gallery single top info meta */

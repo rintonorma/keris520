@@ -43,7 +43,13 @@
             <a href="index.html"><img src="assets/img/logo-big.png" title="Home" alt="logo"></a>
           </div>
           <div class="login-btn">
-            <a href="./login.html">Login / Register</a>
+            <div><b>Dashboard</b></div>
+            <ul class="menu-list">
+              <li><a href="./profile.html">User Account</a></li>
+              <li><a href="./change-password.html">Change Password</a></li>
+              <li><a href="./be-a-talent.html">Talent Profile</a></li>
+              <li><a href="./index.html">Logout</a></li>
+            </ul>
           </div>  
         </div><!-- end -->
 
@@ -117,6 +123,17 @@
               <div class="gsti-toggle">
                 <div class="gsti-toggle-inner">
                   <a href="./index.html"><h2 class="gsti-title text-center font-alter-1"><img src="assets/img/logo.svg" alt="Keris520" width="310"></h2></a>
+                  <div class="gsti-navbar">
+                    <div class="gsti-navbar-list">
+                      <a href="./profile.html" class="active">User Account</a>
+                      <a href="./change-password.html">Change Password</a>
+                      <a href="./be-a-talent.html">Talent Profile</a>
+                    </div>
+                    <div class="gsti-navbar-list">
+                      <a href="./index.html">Log out</a>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -129,47 +146,39 @@
                   <div class="contact-form-inner text-left">
 
                     <div class="contact-form-info text-center">
-                      <h1 class="contact-form-title">Register</h1>
-                      <p>Sollicitudin diam vitae, amet lacus donec eu, donec vulputate duis nullam nulla, suscipit nulla orci, ornare maecenas eget gravida. Curae sollicitudin lobortis.</p>
+                      <h5 class="contact-form-title">Edit Account</h5>
                     </div>
 
                     <div class="row">
                       <div class="col-lg-12">
+                        <div>Name</div>
                         <div class="form-group">
-                          <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                          <input type="text" class="form-control" name="name" value="James Gordon" required>
                         </div>
                       </div>
                       <div class="col-lg-12">
+                        <div>Email</div>
                         <div class="form-group">
-                          <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                          <input type="email" class="form-control" name="email" value="james_gordon@gmail.com" required>
                         </div>
                       </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                       <div class="col-lg-12">
                         <div class="form-group">
                           <input type="password" class="form-control" name="password" id="password-field" placeholder="Password" required>
                           <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="small text-gray"><em>* All fields are required!</em></div>
+                    </div> -->
 
                   </div> <!-- /.contact-form-inner -->
 
                   <div class="row">
                     <div class="col-lg-12">
-                      <a href="./login.html" class="btn btn-primary btn-lg btn-block margin-top-40">Submit</a>
+                      <button type="submit" class="btn btn-primary btn-lg btn-block margin-top-40">Simpan Perubahan</button>
                     </div>
                   </div>
-
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="text-center my-1">Sudah memiliki akun? <a href="./login.html">Login sekarang</a></div>
-                    </div>
-                  </div>
-
                 </form>
               </div>
             </div> <!-- /.col -->
